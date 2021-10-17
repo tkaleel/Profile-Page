@@ -18,6 +18,14 @@
     width:80%;
 }
 
+.col-1 {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
 .justify-center {
     justify-content: center;
 }
@@ -51,14 +59,6 @@
     font-weight: bolder;
 }
 
-.profile{
-    padding: 2%;
-}
-
-.connections {
-    padding: 2%;
-}
-
 .header {
     background-color: #16A2B8;
     height: 100px;
@@ -85,26 +85,16 @@
     border: 5px solid #16A2B8;
     margin-bottom: 50px;
     border-radius: 15px;
-
     }
 
 .info-2 {
     border: 5px solid slategrey;
     margin-bottom: 50px;
     border-radius: 15px;
-
     }
 
 .info-holder {
-    padding: 3%;
-}
-
-.col-1 {
-    flex: 1;
-}
-
-.col-2 {
-    flex: 2;
+    padding: 2%;
 }
 
 .profile-image{
@@ -113,16 +103,11 @@
     border: solid 3px gray;
     border-radius: 50%;
     background-color: white;
-    padding: 3px;
-    
+    padding: 3px; 
 }
 
 .icon{
     height: 25px;
     width: auto;
-}
-
-.options-gear{
-    height:25px;
-    width: auto;
+    margin-right: 5px;
 }
