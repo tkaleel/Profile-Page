@@ -3,6 +3,7 @@
 <head>
     <title>Profile Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -29,16 +30,16 @@
                     <div class="header">
                     </div>
                     <div class="info-holder">
-                        <img class= "profile-image" src="user-circle.png" alt="profile image">
+                        <img class= "profile-image" src="assets/user-circle.png" alt="profile image">
                         <h1>THEO</h1>
                         <div class="container align-center">
-                            <img class= "icon" src="map-marker.png" alt="map marker">
+                            <img class= "icon" src="assets/map-marker.png" alt="map marker">
                             <p>Reno, NV</p>
                         </div>
                         <p>Apprentice Developer | Games Enthusiast | Dungeon-Dweller</p>
                         <p>"Have you tried turning it off and on again?" -Roy Trenneman</p>
                         <div class="container align-center">
-                            <img class="icon" src="gear.png" alt="gear">
+                            <img class="icon" src="assets/gear.png" alt="gear">
                             <a href="">edit profile</a>
                         </div>
                     </div>
@@ -51,10 +52,10 @@
                     </div>
                     <div class="info-holder">
                         <h2>Coding Dojo</h2>
-                        <h3>October 2021 - February 2022</h3>
+                        <h3 class="date-range">October 2021 - February 2022</h3>
                         <h3>Aspiring triple blackbelt in Python, MERN, and Java</h3>
                         <div class="container align-center">
-                            <img class="icon" src="gear.png" alt="gear">
+                            <img class="icon" src="assets/gear.png" alt="gear">
                             <a href="">edit education</a>
                         </div>
                     </div>
@@ -69,29 +70,29 @@
         <div class="info-2">
 
             <div class="container header-2 info-holder align-center justify-between">
-                <p class="number-requests">2</p>
+                <p id="requests" class="number-requests">2</p>
                 <p>Connection Requests</p>
             </div>
             
             <div class="info-holder">
-                <div class="container align-center justify-between">
+                <div id="connection1" class="container align-center justify-between">
                     <div class="container align-center">
-                        <img class="icon" src="user-circle.png" alt="user pic">
+                        <img class="icon" src="assets/user-circle.png" alt="user pic">
                         <p>Bill Shakespeare</p>
                     </div>
                     <div class="container">
-                        <img src="https://placekitten.com/25/25" alt="">
-                        <img src="https://placekitten.com/25/25" alt="">
+                        <img onclick="clearConnection('#connection1'), subtract('#requests'), add('#connections')" class="icon" src="assets/accept-circle.png" alt="">
+                        <img onclick="clearConnection('#connection1'), subtract('#requests')" class="icon" src="assets/close-circle.png" alt="">
                     </div>
                 </div>
-                <div class="container align-center justify-between">
+                <div id="connection2" class="container align-center justify-between">
                     <div class="container align-center">
-                        <img class="icon" src="user-circle.png" alt="user pic">
+                        <img class="icon" src="assets/user-circle.png" alt="user pic">
                         <p>Kit Marlowe</p>
                     </div>
                     <div class="container">
-                        <img src="https://placekitten.com/25/25" alt="">
-                        <img src="https://placekitten.com/25/25" alt="">
+                        <img onclick="clearConnection('#connection2'), subtract('#requests'), add('#connections')" class="icon" src="assets/accept-circle.png" alt="">
+                        <img onclick="clearConnection('#connection2'), subtract('#requests')" class="icon" src="assets/close-circle.png" alt="">
                     </div>
                 </div>  
             </div>
@@ -100,24 +101,24 @@
 <!-- CONNECTIONS CONTAINER BOTTOM RIGHT-->
         <div class="info-2">
             <div class="container header-2 info-holder align-center justify-between">
-                <p class="number-requests">100+</p>
+                <p class="number-requests"><span id="connections">100</span>+</p>
                 <p>Connections</p>
             </div>
             <div class="info-holder">
                 <div class="container align-center">
-                    <img class="icon" src="user-circle.png" alt="user pic">
+                    <img class="icon" src="assets/user-circle.png" alt="user pic">
                     <p>Ginny Woolf</p>
                 </div>
                 <div class="container align-center">
-                    <img class="icon" src="user-circle.png" alt="user pic">
+                    <img class="icon" src="assets/user-circle.png" alt="user pic">
                     <p>Isaac Asimov</p>
                 </div>
                 <div class="container align-center">
-                    <img class="icon" src="user-circle.png" alt="user pic">
+                    <img class="icon" src="assets/user-circle.png" alt="user pic">
                     <p>William Faulkner</p>
                 </div>
                 <div class="container align-center">
-                    <img class="icon" src="user-circle.png" alt="user pic">
+                    <img class="icon" src="assets/user-circle.png" alt="user pic">
                     <p>Mark Twain</p>
                 </div>
             </div>

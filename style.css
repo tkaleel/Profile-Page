@@ -1,5 +1,10 @@
+*{
+    padding:0;
+    margin:0;
+}
 .container{
     display:flex;
+    margin-bottom: 5px;
 }
 
 .nav{
@@ -7,7 +12,17 @@
     background-color: black;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top:10px;
+    padding-bottom:10px;
     font-family: 'Roboto', sans-serif;
+}
+
+p, h2, h3{
+    margin-bottom: 10px;
+}
+
+.date-range{
+    color:gray;
 }
 
 .main{
